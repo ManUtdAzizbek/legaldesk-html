@@ -190,6 +190,7 @@ h1 {
     color: #000000;
     border: 1px solid #d9d9d9;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .manager-search span {
@@ -549,7 +550,6 @@ h1 {
     padding: 10px 20px;
     border: 2px solid #d9d9d9;
     position: fixed;
-    z-index: 99;
     display: block;
     top: 10%;
     right: 35%;
@@ -564,7 +564,6 @@ h1 {
     padding: 10px 20px;
     border: 2px solid #d9d9d9;
     position: fixed;
-    z-index: 99;
     display: block;
     top: 10%;
     right: 35%;
@@ -579,7 +578,6 @@ h1 {
     padding: 10px 20px;
     border: 2px solid #d9d9d9;
     position: fixed;
-    z-index: 99;
     display: block;
     top: 10%;
     right: 35%;
@@ -827,4 +825,192 @@ h1 {
     background: inherit;
     border: 0;
     cursor: pointer;
+}
+
+.login-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f5f5;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.login-top {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.login-bottom {
+    position: absolute;
+    bottom: -180px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.login-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.login-content__slogan {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.login-content__text {
+    font-size: 24px;
+    position: absolute;
+    top: 74%;
+    left: 10%;
+}
+
+.login-content__left,
+.login-content__right {
+    width: 50%;
+}
+
+.login-content__left {
+    margin-top: 100px;
+}
+
+.login-content__right {
+    width: 480px;
+    height: 557px;
+    background: #FFFFFF;
+    opacity: 0.95;
+    border-radius: 10px;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    text-align: center;
+    padding: 40px 60px;
+    background: #FFFFFF;
+}
+
+.login-content__right h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #5B5B5A;
+}
+
+.login-content__right form {
+    padding: 2rem 2rem;
+    position: relative;
+}
+
+.login-content__right form input {
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+
+}
+
+.login-content__right__input {
+    width: 100%;
+    padding: 11px 13px 13px 37px;
+    border: 1px solid #989898;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: .3s;
+    background: #FFFFFF;
+    border: 1px solid #989898;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 12px 3px rgba(255, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+.login-content__checkbox__label {
+    margin: 5px 0 16px 35px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #5b5b5a;
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.login-content__right__radio {
+    border-radius: 7px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #989898;
+    background: #fff;
+    box-shadow: inset 0 0 0 2px #fff;
+    transition: .3s;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    overflow: hidden;
+}
+
+.login-content__checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.login-content__right button {
+    width: 100%;
+    height: 38px;
+    left: 122px;
+    top: 332px;
+    background: #000000;
+    border-radius: 7px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: .5rem;
+}
+
+.login-content-right__span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    color: #5B5B5A;
+}
+
+.login-content__left img {
+    position: absolute;
+    width: 429px;
+    height: 113px;
+    left: 135px;
+    top: 226px;
+}
+
+.login-content__left h1 {
+    position: absolute;
+    width: 495px;
+    height: 121px;
+    left: 135px;
+    top: 380px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+    color: #000000;
 }
