@@ -898,6 +898,10 @@ h1 {
     padding: 40px 74px;
 }
 
+.login-content__right form {
+    position: relative;
+}
+
 .login-content__right h2 {
     font-family: 'Roboto';
     font-style: normal;
@@ -909,6 +913,10 @@ h1 {
 
 .login-content__right form {
     padding: 2rem 2rem;
+    position: relative;
+}
+
+.login-content__item {
     position: relative;
 }
 
@@ -1011,4 +1019,11 @@ h1 {
     font-size: 43px;
     line-height: 50px;
     color: #000000;
+}
+
+.login-content__img {
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    width: 24px;
 }
