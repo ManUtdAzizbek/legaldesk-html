@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <ul class="sidebar-menu__list">
+                <li class="sidebar-menu__item">
+                    <div class="sidebar-menu__name">
+                        Отдел продаж
+                    </div>
+                    <ul class="sidebar-dropdown__list">
+                        <li class="sidebar-dropdown__item">Статус клиента</li>
+                        <li class="sidebar-dropdown__item">База вопросов</li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+
+        <!-- Header -->
+
+
+        <div class="main_content">
+
+            <!-- Navbar -->
+
+            <div class="nav">
+                <img src="img/filter.png" alt="">
+            </div>
+
+            <!-- Content -->
+
+            <div class="content">
+                <div class="users-wrapper">
+                    <div class="users-title">
+                        <h1>Изменить пользователя</h1>
+                    </div>
+                    <div class="users-add">
+                        <div class="users-add__item">
+                            <label for="">Полное имя</label>
+                            <input type="text" placeholder="Сарвар Эшпулатов">
+                        </div>
+                        <div class="users-add__item">
+                            <label for="">Дата рождения</label>
+                            <input type="datetime-local" placeholder="15.08.1999">
+                        </div>
+                        <div class="users-add__item">
+                            <label for="">e-mail</label>
+                            <input type="email" placeholder="s.eshpulatov@legalact.uz">
+                        </div>
+                        <div class="users-add__item">
+                            <label for="">Пароль</label>
+                            <input type="password" placeholder="Пароль">
+                        </div>
+                        <div class="users-add__item">
+                            <label for="">Подтвердите пароль</label>
+                            <input type="password" placeholder="Подтвердите пароль">
+                        </div>
+                        <div class="users-add__item">
+                            <label for="">Чат ид</label>
+                            <input type="number" placeholder="12345678">
+                        </div>
+                        <div class="users-add__item">
+                            <label for="">Сет компютера</label>
+                            <input type="text" placeholder="Сет компютера">
+                        </div>
+                        <div class="users-add__item">
+                            <label for="">Выберите категорию</label>
+                            <select name="" id="">
+                                <option value="Выберите категорию">Выберите категорию</option>
+                            </select>
+                        </div>
+                        <div class="users-add__item__buttons">
+                            <button class="button__outline">Отменить</button>
+                            <button class="button__active">Сохранить</button>
+                        </div>
+                    </div>
+                    
+                </div>     
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

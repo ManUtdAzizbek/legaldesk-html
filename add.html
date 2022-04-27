@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <ul class="sidebar-menu__list">
+                <li class="sidebar-menu__item">
+                    <div class="sidebar-menu__name">
+                        Отдел продаж
+                    </div>
+                    <ul class="sidebar-dropdown__list">
+                        <li class="sidebar-dropdown__item">Статус клиента</li>
+                        <li class="sidebar-dropdown__item">База вопросов</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Header -->
+
+
+        <div class="main_content">
+
+            <!-- Navbar -->
+
+            <div class="nav">
+                <img src="img/filter.png" alt="">
+            </div>
+
+            <!-- Content -->
+
+            <div class="content">
+                <div class="status-service-add">
+                    <h1>Новый статус клиента</h1>
+                    <div class="status-service-add__wrapper">
+                        <form action="">
+                            <div class="status-service-add__item">
+                                <label>Источник</label>
+                                    <input type="text" placeholder="Телефон/почта">
+                            </div>
+                            <div class="status-service-add__item">
+                                <label>Наименование клиента</label>
+                                    <input type="text" placeholder="Александр-Imperia">
+                            </div>
+                            <div class="status-service-add__item">
+                                <label>Выбирете категорию услуги</label>
+                                    <input type="text" placeholder="Бухгалтерское сопровождение">
+                            </div>
+                            <div class="status-service-add__item">
+                                <label>Наименование услуги</label>
+                                    <input type="text" placeholder="Бухгалтерское сопровождение">
+                            </div>
+                            <div class="status-service-add__item">
+                                <label>Сумма услуги</label>
+                                    <input type="text" value="6000">
+                            </div>
+                            <div class="status-service-add__item">
+                                <label>Контактные данные</label>
+                                    <p class="status-service-add__contact__text">Контактное лицо</p>
+                                    <input class="status-service-add__item__input" type="text" value="Александр"
+                                        placeholder="Контактное лицо">
+                            </div>
+                            <div class="status-service-add__item">
+                                <div class="status-service-add__contact">
+                                    <button class="status-service-add__contact__button status-service-add__contact__button__active"> <img src="img/icons/Message.png" alt=""> </button>
+                                    <button class="status-service-add__contact__button"> <img src="img/icons/phone.png" alt=""> </button>
+                                    <input class="status-service-add__item__input" type="text" value="+">
+                                </div>
+                            </div>
+                            <div class="status-service-add__item">
+                                <div class="status-service-add__contact">
+                                    <button class="status-service-add__contact__button"> <img src="img/icons/phone.png" alt=""> </button>
+                                    <button class="status-service-add__contact__button status-service-add__contact__button__active"> <img src="img/icons/Message.png" alt=""> </button>
+                                    <input class="status-service-add__item__input" type="text" placeholder="Почта">
+                                </div>
+                            </div>
+                            <div class="status-service-add__buttons">
+                                <button class="status-service-add__button status-service-add__button__outline">Отменить</button>
+                                <button class="status-service-add__button status-service-add__button__add">Создать</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <ul class="sidebar-menu__list">
+                <li class="sidebar-menu__item">
+                    <div class="sidebar-menu__name">
+                        Отдел продаж
+                    </div>
+                    <ul class="sidebar-dropdown__list">
+                        <li class="sidebar-dropdown__item">Статус клиента</li>
+                        <li class="sidebar-dropdown__item">База вопросов</li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+
+        <!-- Header -->
+
+
+        <div class="main_content">
+
+            <!-- Navbar -->
+
+            <div class="nav">
+                <img src="img/filter.png" alt="">
+            </div>
+
+            <!-- Content -->
+
+            <div class="content">
+                <div class="manager-header">
+                    <div class="manager-create">
+                        <h1>Статус клиента</h1>
+                        <button class="button manager-create__button">Создать статус клиента</button>
+                    </div>
+                    <div class="manager-search">
+                        <span>Поиск</span>
+                        <input type="text" class="manager-search__input" placeholder="Поиск">
+                    </div>
+                </div>
+                <div class="manager-wrapper">
+                    <div class="manager-nav">
+                        <div class="manager-nav__item manager-nav__active">
+                            <span class="manager-menu__number">1</span>
+                            <div class="manager-client__status">Новые клиенты</div>
+                            <div class="manager-indicator__line  manager-indicator__new"></div>
+                        </div>
+                        <div class="manager-nav__item">
+                            <span class="manager-menu__number">4</span>
+                            <div class="manager-client__status">Отправлено КП</div>
+                            <div class="manager-indicator__line  manager-indicator__one"></div>
+                        </div>
+                        <div class="manager-nav__item">
+                            <span class="manager-menu__number">1</span>
+                            <div class="manager-client__status">Отправлен договор</div>
+                            <div class="manager-indicator__line  manager-indicator__two"></div>
+                        </div>
+                        <div class="manager-nav__item">
+                            <span class="manager-menu__number">1</span>
+                            <div class="manager-client__status">Договор подписан</div>
+                            <div class="manager-indicator__line  manager-indicator__three"></div>
+                        </div>
+                        <div class="manager-nav__item">
+                            <span class="manager-menu__number">1</span>
+                            <div class="manager-client__status">Оплата прошла</div>
+                            <div class="manager-indicator__line manager-indicator__four"></div>
+                        </div>
+                        <div class="manager-nav__item">
+                            <span class="manager-menu__number">1</span>
+                            <div class="manager-client__status">Дело передано специалисту</div>
+                            <div class="manager-indicator__line manager-indicator__five"></div>
+                        </div>
+                        <div class="manager-nav__item">
+                            <span class="manager-menu__number">1</span>
+                            <div class="manager-client__status">Дело завершено</div>
+                            <div class="manager-indicator__line manager-indicator__six"></div>
+                        </div>
+                        <div class="manager-nav__item">
+                            <span class="manager-menu__number">1</span>
+                            <div class="manager-client__status">Архив</div>
+                            <div class="manager-indicator__line manager-indicator__archive"></div>
+                        </div>
+                    </div>
+                    <div class="manager-content">
+                        <table class="manager-content__table">
+                            <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>ID</th>
+                                <th>Наименование</th>
+                                <th>Контакты</th>
+                                <th>Услуга</th>
+                                <th>Сумма</th>
+                                <th title="Государственная пошлина">Гос. пош.</th>
+                                <th>Напоминание</th>
+                                <th>Сотрудник</th>
+                                <th>Стадия</th>
+                                <th>Сервис</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="manager-content__border" id="statusColor1">
+                                <td>1</td>
+                                <td>22-0100</td>
+                                <td>Азиз Одилов</td>
+                                <td class="manager-content__phone"><a href="tel:+998909695993">+998909695993</a> <p><a href="mailto:a.odilov@legalact.uz"> a.odilov@legalact.uz</p></a></td>
+                                <td>Налоговое заклюючение</td>
+                                <td>6 000 000 сум</td>
+                                <td>270 000 сум</td>
+                                <td class="manager-content__down">09/05/2022
+                                    <p>
+                                        <img src="img/icons/add.svg" alt="" id="modal-button">
+                                        <img src="img/icons/down.svg" alt="" id="modal-button">
+                                    </p>
+                                </td>
+                                <td>Берекеев Руслан</td>
+                                <td><p class="manager-content__stage manager-content__stage1"> ОтправленоКП </p> <p class="manager-content__stage__date">02/12/2020</p>
+                                </td>
+                                <td class="manager-content__icon">
+                                    <a href="edit.html"><img src="img/icons/edit.png" alt="" title="Редактировать"></a>
+                                    <button id="modal-color-button"><img src="img/icons/setting.png" alt="" title="Изменить цвет"></button>
+                                    <button id="modalChangeButton"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
+                                    <a href=""><img src="img/icons/send.png" alt="" title="Передать"></a>
+                                    <a href=""><img src="img/icons/delete.png" alt="" title="Отправить архив"></a>
+                                </td>
+                            </tr>
+                            <tr class="manager-content__border" id="statusColor2">
+                                <td>2</td>
+                                <td>22-0100</td>
+                                <td>Азиз Одилов</td>
+                                <td class="manager-content__phone"><a href="tel:+998909695993">+998909695993</a> <p><a href="mailto:a.odilov@legalact.uz"> a.odilov@legalact.uz</p></a></td>
+                                <td>Налоговое заклюючение заклюючение</td>
+                                <td>6 000 000 сум</td>
+                                <td>270 000 сум</td>
+                                <td class="manager-content__down">09/05/2022
+                                    <p>
+                                        <img src="img/icons/add.svg" alt="" id="modal-button">
+                                        <img src="img/icons/down.svg" alt="" id="modal-button">
+                                    </p>
+                                </td>
+                                <td>Берекеев Руслан</td>
+                                <td><p class="manager-content__stage manager-content__stage2"> Отправлено </p><p class="manager-content__stage__date">02/12/2020</p></td>
+                                <td class="manager-content__icon">
+                                    <a href="edit.html"><img src="img/icons/edit.png" alt="" title="Редактировать"></a>
+                                    <button id="modal-color-button"><img src="img/icons/setting.png" alt="" title="Изменить цвет"></button>
+                                    <button id="modalChangeButton"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
+                                    <a href=""><img src="img/icons/send.png" alt="" title="Передать"></a>
+                                    <a href=""><img src="img/icons/delete.png" alt="" title="Отправить архив"></a>
+                                </td>
+                            </tr>
+                            <tr class="manager-content__border" id="statusColor3">
+                                <td>3</td>
+                                <td>22-0100</td>
+                                <td>Азиз Одилов</td>
+                                <td class="manager-content__phone"><a href="tel:+998909695993">+998909695993</a> <p><a href="mailto:a.odilov@legalact.uz"> a.odilov@legalact.uz</p></a></td>
+                                <td>Налоговое заклюючение</td>
+                                <td>6 000 000 сум</td>
+                                <td>270 000 сум</td>
+                                <td class="manager-content__down">09/05/2022
+                                    <p>
+                                        <img src="img/icons/add.svg" alt="" id="modal-button">
+                                        <img src="img/icons/down.svg" alt="" id="modal-button">
+                                    </p>
+                                </td>
+                                <td>Берекеев Руслан</td>
+                                <td><p class="manager-content__stage manager-content__stage3">Договорились</p><p class="manager-content__stage__date">02/12/2020</p></td>
+                                <td class="manager-content__icon">
+                                    <a href="edit.html"><img src="img/icons/edit.png" alt="" title="Редактировать"></a>
+                                    <button id="modal-color-button"><img src="img/icons/setting.png" alt="" title="Изменить цвет"></button>
+                                    <button id="modalChangeButton"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
+                                    <a href=""><img src="img/icons/send.png" alt="" title="Передать"></a>
+                                    <a href=""><img src="img/icons/delete.png" alt="" title="Отправить архив"></a>
+                                </td>
+                            </tr>
+                            <tr class="manager-content__border" id="statusColor4">
+                                <td>4</td>
+                                <td>22-0100</td>
+                                <td>Азиз Одилов</td>
+                                <td class="manager-content__phone"><a href="tel:+998909695993">+998909695993</a> <p><a href="mailto:a.odilov@legalact.uz"> a.odilov@legalact.uz</p></a></td>
+                                <td>Налоговое заклюючение</td>
+                                <td>6 000 000 сум</td>
+                                <td>270 000 сум</td>
+                                <td class="manager-content__down">09/05/2022
+                                    <p>
+                                        <img src="img/icons/add.svg" alt="" id="modal-button">
+                                        <img src="img/icons/down.svg" alt="" id="modal-button">
+                                    </p>
+                                </td>
+                                <td>Берекеев Руслан</td>
+                                <td><p class="manager-content__stage manager-content__stage4"> Жду ответа </p><p class="manager-content__stage__date">02/12/2020</p></td>
+                                <td class="manager-content__icon">
+                                    <a href="edit.html"><img src="img/icons/edit.png" alt="" title="Редактировать"></a>
+                                    <button id="modal-color-button"><img src="img/icons/setting.png" alt="" id="modal-color-button" title="Изменить цвет"></button>
+                                    <button id="modalChangeButton"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
+                                    <a href=""><img src="img/icons/send.png" alt="" title="Передать"></a>
+                                    <a href=""><img src="img/icons/delete.png" alt="" title="Отправить архив"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal window -->
+
+    <div class="modal-notification" id="statusModalNotification">
+        <form action="">
+            <div class="status-modal">
+                <p class="modal-close" id="modalNotificationButtonClose">&#10006;</p>
+                <label for="">Дата напоминания</label>
+                <input type="date" placeholder="03.11.2021г">
+                <label for="">Введите комментарий</label>
+                <textarea name="" id="" cols="20" rows="10" placeholder="Коментарии"></textarea>
+                <button class="status-service-add__button status-service-add__button__outline">Отменить</button>
+                <button class="status-service-add__button status-service-add__button__add">Создать</button>
+            </div>
+        </form>
+    </div>
+
+       <!-- Color modal -->
+    <div class="modal-color" id="statusColorModal">
+        <div class="status-color-modal">
+            <p class="modal-color-close" id="ModalColorButtonClose">&#10006;</p>
+            <label for="">Выберите цвет клиента</label>
+            <button class="status-color-btn status-color-btn-red">Красный</button>
+            <button class="status-color-btn status-color-btn-yellow">Желтый</button>
+            <button class="status-color-btn status-color-btn-green">Зеленый</button>
+            <button class="status-color-btn status-color-btn-gray">Серый</button>
+            <button class="status-color-btn">Убрать цвет</button>
+        </div>
+    </div>
+
+    <!-- Status change modal -->
+    <div class="modal-change-item" id="statusChange">
+        <div class="status-change-modal">
+            <p class="modal-change-close" id="modalChangeButtonClose">&#10006;</p>
+            <label for="">Выберите статус</label>
+            <button class="status-change">Отправлено КП</button>
+            <button class="status-change">Отправлен договор</button>
+            <button class="status-change">Договор подписан</button>
+            <button class="status-change">Оплата прошла</button>
+            <button class="status-change">Дело передано специалисту</button>
+            <button class="status-change">Дело завершено</button>
+            <button class="status-change">Архив</button>
+        </div>
+    </div>
+
+
+    <script type="application/javascript">
+
+        /* Add notification */
+
+    document.getElementById('modal-button').addEventListener('click', function() {
+        document.getElementById('statusModalNotification').classList.add('is-visible');
+      });
+      
+    document.getElementById('modalNotificationButtonClose').addEventListener('click', function() {
+        document.getElementById('statusModalNotification').classList.remove('is-visible');
+    });
+
+    /* Change color */
+    
+    document.getElementById('modal-color-button').addEventListener('click', function() {
+      document.getElementById('statusColorModal').classList.add('is-visible');
+    });
+    
+    document.getElementById('ModalColorButtonClose').addEventListener('click', function() {
+      document.getElementById('statusColorModal').classList.remove('is-visible');
+    });
+
+    /* Change status*/
+
+    document.getElementById('modalChangeButton').addEventListener('click', function() {
+      document.getElementById('statusChange').classList.add('is-visible');
+    });
+    
+    document.getElementById('modalChangeButtonClose').addEventListener('click', function() {
+      document.getElementById('statusChange').classList.remove('is-visible');
+    });
+
+    </script>
+
+</body>
+
+</html>
