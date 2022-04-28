@@ -1163,7 +1163,6 @@ input:focus {
     margin: 2rem;
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
-    width: 32%;
     max-width: 480px;
     overflow: auto;
     text-align: center;
