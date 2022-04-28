@@ -717,6 +717,7 @@ input:focus {
 .modal-closed {
     position: absolute;
     right: 20px;
+    top: 35px;
     cursor: pointer;
 }
 
