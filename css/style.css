@@ -1154,8 +1154,7 @@ button {
     margin: 2rem;
     padding: 2rem;
     border-radius: 0.25rem;
-    width: 40%;
-    max-height: 75%;
+    width: 32%;
     overflow: auto;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0,0,0,0.4);
@@ -1207,8 +1206,7 @@ button {
 height: 40px;
 left: 0px;
 top: 0px;
-
-background: #FFFFFF;
+background: #FFFFFF !important;
 border: 1px solid rgba(11, 30, 69, 0.2);
 box-sizing: border-box;
 border-radius: 7px;
@@ -1253,6 +1251,7 @@ display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    background-color: #fff;
     color: #000000;
 }
 
@@ -1283,10 +1282,11 @@ display: flex;
 }
 
 .modal-user-save {
-    background: #19B28D;
+    background: #19B28D !important;
+    color: #fff !important;
 }
 
 .modal-user-delete {
-    background: #DD2A1B ;
+    background: #DD2A1B !important;
 }
 /* Modal user */
