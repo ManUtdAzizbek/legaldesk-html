@@ -76,7 +76,7 @@
                                 <td>//IT-ADMIN</td>
                                 <td>
                                     <a href="user-edit.html"><img src="img/icons/edit.png" alt=""></a>
-                                    <button onclick="document.getElementById('user-delete-open').style.display='block'"><img src="img/icons/delete.png" alt=""></button>
+                                    <button data-modal-target="modal1"><img src="img/icons/delete.png" alt=""></button>
                                 </td>
                             </tr>
                             <tr class="users-row">
@@ -87,7 +87,7 @@
                                 <td class="users-table-empty">не указан</td>
                                 <td>
                                     <a href="user-edit.html"><img src="img/icons/edit.png" alt=""></a>
-                                    <button onclick="document.getElementById('user-delete-open').style.display='block'"><img src="/img/icons/delete.png" alt=""></button>
+                                    <button data-modal-target="modal1"><img src="img/icons/delete.png" alt=""></button>
                                 </td>
                             </tr>
                             <tr class="users-row">
@@ -98,7 +98,7 @@
                                 <td>//IT-ADMIN</td>
                                 <td>
                                     <a href="user-edit.html"><img src="img/icons/edit.png" alt=""></a>
-                                    <button onclick="document.getElementById('user-delete-open').style.display='block'"><img src="img/icons/delete.png" alt=""></button>
+                                    <button data-modal-target="modal1"><img src="img/icons/delete.png" alt=""></button>
                                 </td>
                             </tr>
                             <tr class="users-row">
@@ -109,7 +109,7 @@
                                 <td class="users-table-empty">не указан</td>
                                 <td>
                                     <a href="user-edit.html"><img src="img/icons/edit.png" alt=""></a>
-                                    <button onclick="document.getElementById('user-delete-open').style.display='block'"><img src="/img/icons/delete.png" alt=""></button>
+                                    <button data-modal-target="modal1"><img src="img/icons/delete.png" alt=""></button>
                                 </td>
                             </tr>
                             <tr class="users-row">
@@ -120,7 +120,7 @@
                                 <td>//IT-ADMIN</td>
                                 <td>
                                     <a href="user-edit.html"><img src="img/icons/edit.png" alt=""></a>
-                                    <button onclick="document.getElementById('user-delete-open').style.display='block'"><img src="img/icons/delete.png" alt=""></button>
+                                    <button data-modal-target="modal1"><img src="img/icons/delete.png" alt=""></button>
                                 </td>
                             </tr>
                             <tr class="users-row">
@@ -131,7 +131,7 @@
                                 <td class="users-table-empty">не указан</td>
                                 <td>
                                     <a href="user-edit.html"><img src="img/icons/edit.png" alt=""></a>
-                                    <button onclick="document.getElementById('user-delete-open').style.display='block'"><img src="img/icons/delete.png" alt=""></button>
+                                    <button data-modal-target="modal6"><img src="img/icons/delete.png" alt=""></button>
                                 </td>
                             </tr>
                         </tbody>
@@ -142,6 +142,17 @@
         </div>
     </div>
 
+<div class="modal" id="modal1">
+  <div class="modal-content">
+    <span class="modal-closed modal-close">&times;</span>
+    <h2>Удалить пользователя ?</h2>
+    <p>Вы действытельно хотите удалить пользователя</p>
+    <div class="modal-users">
+        <button class="modal-close modal-user modal-user-cancel">Отменить</button>
+        <button class="modal-user modal-user-delete">Удалить</button>
+    </div>
+  </div>
+</div>
     <script src="js/main.js"></script>
 
 </body>
