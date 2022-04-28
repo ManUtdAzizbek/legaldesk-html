@@ -138,10 +138,10 @@
                                 </td>
                                 <td class="manager-content__icon">
                                     <a href="edit.html"><img src="img/icons/edit.png" alt="" title="Редактировать"></a>
-                                    <button id="modal-color-button"><img src="img/icons/setting.png" alt="" title="Изменить цвет"></button>
-                                    <button id="modalChangeButton"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
-                                    <a href=""><img src="img/icons/send.png" alt="" title="Передать"></a>
-                                    <a href=""><img src="img/icons/delete.png" alt="" title="Отправить архив"></a>
+                                    <button data-modal-target="modal2"><img src="img/icons/setting.png" alt="" title="Изменить цвет"></button>
+                                    <button data-modal-target="modal3"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
+                                    <button data-modal-target="modal4"><img src="img/icons/send.png" alt="" title="Передать"></button>
+                                    <button data-modal-target="modal5"><img src="img/icons/delete.png" alt="" title="Отправить архив"></button>
                                 </td>
                             </tr>
                             <tr class="manager-content__border" id="statusColor2">
@@ -162,10 +162,10 @@
                                 <td><p class="manager-content__stage manager-content__stage2"> Отправлено </p><p class="manager-content__stage__date">02/12/2020</p></td>
                                 <td class="manager-content__icon">
                                     <a href="edit.html"><img src="img/icons/edit.png" alt="" title="Редактировать"></a>
-                                    <button id="modal-color-button"><img src="img/icons/setting.png" alt="" title="Изменить цвет"></button>
-                                    <button id="modalChangeButton"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
-                                    <a href=""><img src="img/icons/send.png" alt="" title="Передать"></a>
-                                    <a href=""><img src="img/icons/delete.png" alt="" title="Отправить архив"></a>
+                                    <button data-modal-target="modal2"><img src="img/icons/setting.png" alt="" title="Изменить цвет"></button>
+                                    <button data-modal-target="modal3"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
+                                    <button data-modal-target="modal4"><img src="img/icons/send.png" alt="" title="Передать"></button>
+                                    <button data-modal-target="modal5"><img src="img/icons/delete.png" alt="" title="Отправить архив"></button>
                                 </td>
                             </tr>
                             <tr class="manager-content__border" id="statusColor3">
@@ -186,10 +186,10 @@
                                 <td><p class="manager-content__stage manager-content__stage3">Договорились</p><p class="manager-content__stage__date">02/12/2020</p></td>
                                 <td class="manager-content__icon">
                                     <a href="edit.html"><img src="img/icons/edit.png" alt="" title="Редактировать"></a>
-                                    <button id="modal-color-button"><img src="img/icons/setting.png" alt="" title="Изменить цвет"></button>
-                                    <button id="modalChangeButton"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
-                                    <a href=""><img src="img/icons/send.png" alt="" title="Передать"></a>
-                                    <a href=""><img src="img/icons/delete.png" alt="" title="Отправить архив"></a>
+                                    <button data-modal-target="modal2"><img src="img/icons/setting.png" alt="" title="Изменить цвет"></button>
+                                    <button data-modal-target="modal3"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
+                                    <button data-modal-target="modal4"><img src="img/icons/send.png" alt="" title="Передать"></button>
+                                    <button data-modal-target="modal5"><img src="img/icons/delete.png" alt="" title="Отправить архив"></button>
                                 </td>
                             </tr>
                             <tr class="manager-content__border" id="statusColor4">
@@ -210,10 +210,10 @@
                                 <td><p class="manager-content__stage manager-content__stage4"> Жду ответа </p><p class="manager-content__stage__date">02/12/2020</p></td>
                                 <td class="manager-content__icon">
                                     <a href="edit.html"><img src="img/icons/edit.png" alt="" title="Редактировать"></a>
-                                    <button id="modal-color-button"><img src="img/icons/setting.png" alt="" id="modal-color-button" title="Изменить цвет"></button>
-                                    <button id="modalChangeButton"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
-                                    <a href=""><img src="img/icons/send.png" alt="" title="Передать"></a>
-                                    <a href=""><img src="img/icons/delete.png" alt="" title="Отправить архив"></a>
+                                    <button data-modal-target="modal2"><img src="img/icons/setting.png" alt="" title="Изменить цвет"></button>
+                                    <button data-modal-target="modal3"><img src="img/icons/up.png" alt="" title="Изменить статус"></button>
+                                    <button data-modal-target="modal4"><img src="img/icons/send.png" alt="" title="Передать"></button>
+                                    <button data-modal-target="modal5"><img src="img/icons/delete.png" alt="" title="Отправить архив"></button>
                                 </td>
                             </tr>
                         </tbody>
@@ -225,84 +225,84 @@
         </div>
     </div>
 
-    <!-- Modal window -->
-
-    <div class="modal-notification" id="statusModalNotification">
-        <form action="">
-            <div class="status-modal">
-                <p class="modal-close" id="modalNotificationButtonClose">&#10006;</p>
-                <label for="">Дата напоминания</label>
-                <input type="date" placeholder="03.11.2021г">
-                <label for="">Введите комментарий</label>
-                <textarea name="" id="" cols="20" rows="10" placeholder="Коментарии"></textarea>
-                <button class="status-service-add__button status-service-add__button__outline">Отменить</button>
-                <button class="status-service-add__button status-service-add__button__add">Создать</button>
-            </div>
-        </form>
+    <!-- Modal notification window -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+          <span class="modal-closed modal-close">&times;</span>
+          <label for="">Тема:</label>
+          <input type="text">
+          <label for="">Дата напоминания</label>
+          <input type="datetime-local">
+          <label for="">Введите комментарий</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <div class="modal-users">
+            <button class="modal-close modal-user modal-user-cancel">Отменить</button>
+            <button class="modal-user modal-user-save">Сохранить</button>
+        </div>
+        </div>
     </div>
-
-       <!-- Color modal -->
-    <div class="modal-color" id="statusColorModal">
-        <div class="status-color-modal">
-            <p class="modal-color-close" id="ModalColorButtonClose">&#10006;</p>
-            <label for="">Выберите цвет клиента</label>
-            <button class="status-color-btn status-color-btn-red">Красный</button>
-            <button class="status-color-btn status-color-btn-yellow">Желтый</button>
-            <button class="status-color-btn status-color-btn-green">Зеленый</button>
-            <button class="status-color-btn status-color-btn-gray">Серый</button>
-            <button class="status-color-btn">Убрать цвет</button>
+    <!-- Color Modal window -->
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+          <span class="modal-closed modal-close">&times;</span>
+          <p>Выберите цвет клиента:</p>
+          <button class="modal-color-button modal-color-red">Красный</button>
+          <button class="modal-color-button modal-color-yellow">Желтый</button>
+          <button class="modal-color-button modal-color-green">Зеленый</button>
+          <button class="modal-color-button modal-color-gray">Серый</button>
+          <button class="modal-color-button">Убрать цвет</button>
+          <div class="modal-users">
+            <button class="modal-close modal-user modal-user-cancel">Отменить</button>
+            <button class="modal-user modal-user-save">Сохранить</button>
+        </div>
+        </div>
+    </div>
+    <!-- Modal stage window -->
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+          <span class="modal-closed modal-close">&times;</span>
+          <p>Перевести на следующую стадию:</p>
+          <button class="modal-color-button modal-color-red">Отправлено КП</button>
+          <button class="modal-color-button modal-color-yellow">Отправлен договор </button>
+          <button class="modal-color-button modal-color-green">Договор подписан</button>
+          <button class="modal-color-button modal-color-gray">Оплата прошла</button>
+          <button class="modal-color-button">Работа завершена</button>
+          <button class="modal-color-button">Архив</button>
+          <div class="modal-users">
+            <button class="modal-close modal-user modal-user-cancel">Отменить</button>
+            <button class="modal-user modal-user-save">Сохранить</button>
+        </div>
+        </div>
+    </div>
+    <!-- Modal give window -->
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+          <span class="modal-closed modal-close">&times;</span>
+          <p>Передача клиента:</p>
+          <button class="modal-color-button modal-color-red">Руслан Берекеев</button>
+          <button class="modal-color-button modal-color-yellow">Бахтиёр Сулаймонов </button>
+          <div class="modal-users">
+            <button class="modal-close modal-user modal-user-cancel">Отменить</button>
+            <button class="modal-user modal-user-save">Сохранить</button>
+        </div>
         </div>
     </div>
 
-    <!-- Status change modal -->
-    <div class="modal-change-item" id="statusChange">
-        <div class="status-change-modal">
-            <p class="modal-change-close" id="modalChangeButtonClose">&#10006;</p>
-            <label for="">Выберите статус</label>
-            <button class="status-change">Отправлено КП</button>
-            <button class="status-change">Отправлен договор</button>
-            <button class="status-change">Договор подписан</button>
-            <button class="status-change">Оплата прошла</button>
-            <button class="status-change">Дело передано специалисту</button>
-            <button class="status-change">Дело завершено</button>
-            <button class="status-change">Архив</button>
+    <!-- Modal delete window -->
+
+    <div class="modal" id="modal5">
+        <div class="modal-content">
+          <span class="modal-closed modal-close">&times;</span>
+          <h2>Удалить пользователя ?</h2>
+          <p>Вы действытельно хотите удалить пользователя</p>
+          <div class="modal-users">
+              <button class="modal-close modal-user modal-user-cancel">Отменить</button>
+              <button class="modal-user modal-user-delete">Удалить</button>
+          </div>
         </div>
-    </div>
-
-
-    <script type="application/javascript">
-
-        /* Add notification */
-
-    document.getElementById('modal-button').addEventListener('click', function() {
-        document.getElementById('statusModalNotification').classList.add('is-visible');
-      });
+      </div>
       
-    document.getElementById('modalNotificationButtonClose').addEventListener('click', function() {
-        document.getElementById('statusModalNotification').classList.remove('is-visible');
-    });
-
-    /* Change color */
-    
-    document.getElementById('modal-color-button').addEventListener('click', function() {
-      document.getElementById('statusColorModal').classList.add('is-visible');
-    });
-    
-    document.getElementById('ModalColorButtonClose').addEventListener('click', function() {
-      document.getElementById('statusColorModal').classList.remove('is-visible');
-    });
-
-    /* Change status*/
-
-    document.getElementById('modalChangeButton').addEventListener('click', function() {
-      document.getElementById('statusChange').classList.add('is-visible');
-    });
-    
-    document.getElementById('modalChangeButtonClose').addEventListener('click', function() {
-      document.getElementById('statusChange').classList.remove('is-visible');
-    });
-
-    </script>
+      <script src="js/main.js"></script>
 
 </body>
 
