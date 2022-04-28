@@ -1152,7 +1152,7 @@ button {
     position: relative;
     background-color: #fff;
     margin: 2rem;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     width: 32%;
     overflow: auto;
@@ -1174,9 +1174,6 @@ button {
     line-height: 1.5rem;
   }
   .modal-closed {
-    position: absolute;
-    top: 10%;
-    right: 2%;
     font-size: 1.75rem;
     font-weight: bold;
     padding: 0 0.75rem;
@@ -1215,6 +1212,7 @@ line-height: 16px;
 display: flex;
 align-items: center;
 color: #AAABAD;
+padding: 15px;
 }
 
 .modal-content label {
