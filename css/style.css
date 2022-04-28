@@ -612,8 +612,6 @@ button {
 .status-service-add__button {
     width: 112px;
     height: 40px;
-    right: 616px;
-    bottom: 449px;
     border-radius: 7px;
     margin-left: 18px;
     cursor: pointer;
@@ -1290,5 +1288,6 @@ display: flex;
 
 .modal-user-delete {
     background: #DD2A1B !important;
+    color: #ffffff !important;
 }
 /* Modal user */
