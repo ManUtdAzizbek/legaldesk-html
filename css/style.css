@@ -1237,21 +1237,20 @@ padding: 15px;
     display: block;
     text-align: left;
     width: 368px;
-    margin: 0.7rem 0rem;
+    margin: 1.2rem 0rem 1rem 0;
     font-weight: 500;
 }
 
 .modal-content textarea {
     width: 368px;
-height: 60px;
-left: 0px;
-top: 32px;
-
-background: #FFFFFF;
-border: 1px solid rgba(11, 30, 69, 0.2);
-box-sizing: border-box;
-border-radius: 7px;
-display: flex;
+    height: 60px;
+    left: 0px;
+    top: 32px;
+    background: #FFFFFF;
+    border: 1px solid rgba(11, 30, 69, 0.2);
+    box-sizing: border-box;
+    border-radius: 7px;
+    display: flex;
 }
 
 .modal-content button {
