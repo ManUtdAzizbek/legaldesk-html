@@ -60,6 +60,8 @@ button {
 
 .sidebar ul {
     list-style-type: none;
+    padding: 0;
+    margin-left: -2px;
 }
 
 .sidebar-menu__list {
@@ -67,12 +69,47 @@ button {
     font-size: 12px;
     line-height: 14px;
     margin: 15px;
+    margin-top: 2rem;
 }
 
 .sidebar-menu__item {
-    background: #f2f2f2;
-    padding: 10px;
     border-radius: 8px;
+    width: 200px;
+    height: max-content;
+    position: relative;
+}
+
+.sidebar-menu__name,
+.sidebar-dropdown__item {
+    padding: 12px 15px 12px 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    color: #000000;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+}
+
+.sidebar-dropdown__item {
+    padding-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-menu__name:hover {
+    background: #d3d3d3;
+}
+
+.sidebar-dropdown__item:hover {
+    background: #fbd9d9;
+}
+
+.sidebar-dropdown__item img {
+    position: absolute;
+    left: 14%;
 }
 
 .content {
