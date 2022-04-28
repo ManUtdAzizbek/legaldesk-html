@@ -1156,6 +1156,7 @@ button {
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     width: 32%;
+    max-width: 480px;
     overflow: auto;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0,0,0,0.4);
@@ -1252,6 +1253,8 @@ display: flex;
     line-height: 16px;
     background-color: #fff;
     color: #000000;
+    display: block;
+    margin: 0.5rem auto;
 }
 
 /* Modal input button textarea */
@@ -1261,6 +1264,8 @@ display: flex;
     position: relative;
     display:flex;
     justify-content: center;
+    max-width: 300px;
+    margin: auto;
 }
 .modal-user {
     padding: 9px 20px;
