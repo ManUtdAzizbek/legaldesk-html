@@ -817,19 +817,19 @@ input:focus {
     cursor: pointer;
 }
 
-.status-color-btn-red:hover {
+.modal-color-red:hover {
     background: #ee505a;
 }
 
-.status-color-btn-yellow:hover {
+.modal-color-yellow:hover {
     background: #fcb664;
 }
 
-.status-color-btn-gray:hover {
+.modal-color-gray:hover {
     background: #9b9b9b;
 }
 
-.status-color-btn-green:hover {
+.modal-color-green:hover {
     background: #27ae60;
 }
 
