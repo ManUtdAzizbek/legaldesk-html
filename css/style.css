@@ -22,7 +22,7 @@ body {
 
 h1 {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     color: #181818;
 }
@@ -503,13 +503,22 @@ input:focus {
     margin: 40px auto;
 }
 
-.status-service-add__item,
 .users-add__item {
-    width: 70%;
+    width: 55%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     margin-bottom: 1rem;
+    justify-content: flex-end;
+}
+
+.status-service-add__item {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 1rem;
+    justify-content: flex-end;
 }
 
 .status-service-add__item label,
@@ -572,6 +581,9 @@ input:focus {
 .users-add__item select option {
     padding: 10px;
 }
+.status-service-add__contact {
+    display: flex;
+}
 
 .status-service-add__contact__text {
     font-weight: 500;
@@ -591,30 +603,25 @@ input:focus {
     box-sizing: border-box;
     border-radius: 7px;
     cursor: pointer;
-    margin: 0px 6px;
+    margin-left: 10px;
 }
 
 .status-service-add__contact__button__active {
     background: #FFE6E6;  
 }
 
-.status-service-add__contact {
-    margin-left: auto;
-    width: 66%;
-}
-
 .status-service-add__buttons {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 38%;
+    justify-content: flex-end;
+    width: 55%;
+    position: relative;
 }
 
 .users-add__item__buttons {
     position: relative;
     display: flex;
-    width: 70%;
-    justify-content: center;
+    width: 55%;
+    justify-content: flex-end;
 }
 
 .status-service-add__button {
@@ -623,6 +630,7 @@ input:focus {
     border-radius: 7px;
     margin-left: 18px;
     cursor: pointer;
+    padding: 10px;
 }
 
 .users-add__item__buttons button {
